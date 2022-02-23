@@ -39,7 +39,7 @@ input:focus{
 }
 .main-cont{
     background-color: #fafafa;
-    min-height: 100vh;
+    min-height: 85vh;
 }
 .input-main{
     background-color: #ffffff;
@@ -53,35 +53,98 @@ input:focus{
     text-align: center;
 }
 .content{
-min-height: 100vh;
-background-color:#c0c0c0;
+    min-height: 100vh;
+    background-color:#c0c0c0;
 }
 .top-text{
+    padding-top: 3vh;
     font-size: 20px;
     margin: 0;
     line-height: 1.5em;
 }
 .top-text-cont p:last-child{
-    margin-top: 20px;
+    padding-bottom: 3vh;
 }
 .top-text-cont{
     width: 80%;
     margin-left: 4vw;
 }
+.input-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 button {
     border: none;
     margin-top: 30px;
     color: white;
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: 900;
     padding: 8px 50px 8px 50px;
     border-radius: 5px;
     background-color: #3a533c;
 }
 .login-text{
-    margin-top: 40px;
+    margin-top: 20px;
+    /* margin-left: 4vw; */
+    padding-bottom: 30px;
+    font-size: 1em;
+    text-align: center;
 }
 .login-text a{
     text-decoration: none;
     color: #3a533c;
+}
+.logo-cont{
+    background-color: rgba(0,0,0,0.2);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/main-img.jpg");
+}
+.logo-cont p{
+    color: white;
+    font-size: 3em;
+}
+.logo-cont img{
+    height: 3em;
+    margin-right: 20px;
+
+}
+@media only screen and (min-width: 700px){
+    .logo-cont p{
+        font-size: 5em;
+    }
+    .logo-cont img{
+        height: 5em;
+    }
+    .input-button{
+        display: inline-block;
+        margin-left: 4vw;
+        width: auto;
+    }
+    .login-text{
+        text-align:left;
+        margin-left: 4vw;
+    }
+    .input{
+        margin: 0;
+        margin-left: 4vw;
+        width: max(30%, 300px);
+
+    }
+    .input label{
+        text-align: left;
+    }
+    .input-main{
+        padding: 20px 0 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input-main p{
+        text-align: left;
+        margin-left: 4vw;
+        width: 100%;
+    }
 }
