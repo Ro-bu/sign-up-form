@@ -38,6 +38,14 @@ input:focus{
     box-shadow: 2px 4px 5px #c0c0c0;
     border: 1px solid #47adf1;
 }
+.error{
+    border: 1px solid #ff3838;
+    border-radius: 5px;
+    height: 2em;
+    padding-left: 15px;
+    font-size: 14px;
+    box-shadow:none;
+}
 .main-cont{
     background-color: #fafafa;
     min-height: 85vh;
